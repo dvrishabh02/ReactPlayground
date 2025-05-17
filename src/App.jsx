@@ -2,32 +2,19 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import PropertyList from './PropertyList'
 
+const properties=[
+  { id: 1, name: 'Property 1', price: 100000 },
+  { id: 2, name: 'Property 2', price: 200000 },
+  { id: 3, name: 'Property 3', price: 300000 },
+];
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 5)}>
-          count is {count}
-        </button>
-        <p>
-         <h1> Hey Guys Welcoome to my React PlayGround.</h1>
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <PropertyList properties={properties} />
     </>
   )
 }
