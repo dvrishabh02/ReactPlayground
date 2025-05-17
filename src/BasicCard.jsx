@@ -8,13 +8,13 @@ import Typography from '@mui/material/Typography';
 
 function BasicCard({text,chapter,chapterName}) {
   return (
-    <Card sx={{ minWidth: 1000,minHeight: 300, marginTop: 5 }}>
+    <Card>
       <CardContent>
-        <Typography sx={{ color: 'text.secondary', mb: 1.5 }}>{chapter}  {chapterName}</Typography>
+        <Typography sx={{ color: 'red', mb: 1.5 }}><h2>{chapter}. {chapterName}</h2></Typography>
         <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14 }}>
-          {text}
+          <h3>{text}</h3>
         </Typography>
-      </CardContent>
+      </CardContent>  
     </Card>
   );
 }
