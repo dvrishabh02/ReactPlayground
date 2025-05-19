@@ -10,12 +10,10 @@ function BasicCard({text,chapter,chapterName}) {
   return (
     <Card>
       <CardContent>
-
-        {/* <Typography sx={{ color: 'red', mb: 1.5 }}><h2>{chapter}. {chapterName}</h2></Typography>
+        <Typography sx={{ color: 'red', mb: 1.5 }}><h2>{chapter}. {chapterName}</h2></Typography>
         <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14 }}>
           <h3>{text}</h3>
-        </Typography> */}
-        <Typography sx={{ color: 'red', mb: 1.5 }}><h2>I Love you Rizzy ; </h2></Typography>
+        </Typography> 
       </CardContent>  
     </Card>
   );
